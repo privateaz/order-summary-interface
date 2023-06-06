@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 350px;
+  height: 550px;
+  background: white;
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .dance-image {
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+}
+
+.container h2 {
+  position: absolute;
+  top: 35%;
+  margin: 20px 0;
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.container p {
+  position: absolute;
+  top: 44%;
+  padding: 0px 35px;
+  color: var(--desaturated-blue);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.last-line {
+  display: inline-block;
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container .choose-plan {
+  position: absolute;
+  top: 61%;
+  background-color: var(--very-pale-blue);
+  width: 280px;
+  height: 80px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.container .choose-plan img {
+  position: absolute;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.container .plan-type {
+  position: absolute;
+  left: 15%;
+  top: 23%;
+  margin: 0 10px;
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.container .plan-value {
+  position: absolute;
+  left: 15%;
+  top: 52%;
+  margin: 0 10px;
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.container .change {
+  position: absolute;
+  left: 75%;
+  border: none;
+  background-color: var(--very-pale-blue);
+  color: var(--bright-blue);
+  font-weight: bold;
+  text-decoration: underline var(--bright-blue) 2px;
+}
+
+.container .change:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+.container .submit {
+  top: 79%;
+  position: absolute;
+  width: 280px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: var(--bright-blue);
+  color: white;
+  border: none;
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.17);
+}
+
+.container .submit:hover {
+  cursor: pointer;
+  background-color: var(--desaturated-blue);
+}
+
+.container .cancel {
+  position: absolute;
+  top: 89%;
+  font-weight: 900;
+}
+
+.container .cancel:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
